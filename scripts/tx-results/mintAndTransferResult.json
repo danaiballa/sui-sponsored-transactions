@@ -1,11 +1,11 @@
 {
-  "digest": "6u4bcU4Y5SZZ75K2hK8zGcUmiAXGY1w3oS1aXPEnpPMV",
+  "digest": "3intdw8djEaPxEYPK1YFjrmK7MdRrKKATUjJdmVPHmkL",
   "effects": {
     "messageVersion": "v1",
     "status": {
       "status": "success"
     },
-    "executedEpoch": "92",
+    "executedEpoch": "93",
     "gasUsed": {
       "computationCost": "1000000",
       "storageCost": "3686000",
@@ -15,23 +15,23 @@
     "modifiedAtVersions": [
       {
         "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
-        "sequenceNumber": "205533"
+        "sequenceNumber": "205534"
       },
       {
         "objectId": "0xb2cc6cfa293672df01aaff12e4c193a6614fb207907e8414e52138694cbf074e",
-        "sequenceNumber": "205533"
+        "sequenceNumber": "205535"
       }
     ],
-    "transactionDigest": "6u4bcU4Y5SZZ75K2hK8zGcUmiAXGY1w3oS1aXPEnpPMV",
+    "transactionDigest": "3intdw8djEaPxEYPK1YFjrmK7MdRrKKATUjJdmVPHmkL",
     "created": [
       {
         "owner": {
           "AddressOwner": "0x1378f860144a2ab2e34622009e4a11b9228d245e444b0caf6289096206cbd496"
         },
         "reference": {
-          "objectId": "0x4ae7748910ff1d0cd50dd259a04ff2d4977c0ff4f07f55de29199e9702d9f2ed",
-          "version": 205534,
-          "digest": "Hxzi9bZcG9e7yEWCKrSkeCap3cTLZaRL16ths3fCChnL"
+          "objectId": "0xf1ed8171fe3bb00496bbe30fc4c3e5b3fc46f267d3dabfab71f6fb6c7a592f78",
+          "version": 205536,
+          "digest": "EK1oGPDzrKD3cS15bTHfZCAmshAqkh44ruFYHxD3dfMK"
         }
       }
     ],
@@ -42,8 +42,8 @@
         },
         "reference": {
           "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
-          "version": 205534,
-          "digest": "BpRs5mTwSZEs2m8HphXYNotQTqxfL9BbFAREHBNoEtQU"
+          "version": 205536,
+          "digest": "9PZLM5NFr6ShwjqWeStgu2KYovEiPwAdhJU5Bx82rnLZ"
         }
       },
       {
@@ -52,8 +52,8 @@
         },
         "reference": {
           "objectId": "0xb2cc6cfa293672df01aaff12e4c193a6614fb207907e8414e52138694cbf074e",
-          "version": 205534,
-          "digest": "HiWWNu2mU6gnDt6VrShv6CRsLqZMFjJF9iNb5TkRJdS7"
+          "version": 205536,
+          "digest": "HtxXhDFeU9pd99DjCb1x7Hq4bVsrT5qFcH7jGXsBrmWW"
         }
       }
     ],
@@ -63,12 +63,14 @@
       },
       "reference": {
         "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
-        "version": 205534,
-        "digest": "BpRs5mTwSZEs2m8HphXYNotQTqxfL9BbFAREHBNoEtQU"
+        "version": 205536,
+        "digest": "9PZLM5NFr6ShwjqWeStgu2KYovEiPwAdhJU5Bx82rnLZ"
       }
     },
     "dependencies": [
-      "AWNetjkom6dddaRLo48KDKnybDDyaLh1gVTY4gYmeZui"
+      "6u4bcU4Y5SZZ75K2hK8zGcUmiAXGY1w3oS1aXPEnpPMV",
+      "AWNetjkom6dddaRLo48KDKnybDDyaLh1gVTY4gYmeZui",
+      "H4Qumo6sAdbhuJ4GDSdqf3SFa1kSxQ2rBxp2X62FMqD1"
     ]
   },
   "objectChanges": [
@@ -80,9 +82,9 @@
       },
       "objectType": "0x2::coin::Coin<0x2::sui::SUI>",
       "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
-      "version": "205534",
-      "previousVersion": "205533",
-      "digest": "BpRs5mTwSZEs2m8HphXYNotQTqxfL9BbFAREHBNoEtQU"
+      "version": "205536",
+      "previousVersion": "205534",
+      "digest": "9PZLM5NFr6ShwjqWeStgu2KYovEiPwAdhJU5Bx82rnLZ"
     },
     {
       "type": "mutated",
@@ -92,9 +94,9 @@
       },
       "objectType": "0x5eb0e038eb9d4947505f06816a68f95f3e05f4cd97367653c71bba779dff7c8a::dummy_nft::MintCap",
       "objectId": "0xb2cc6cfa293672df01aaff12e4c193a6614fb207907e8414e52138694cbf074e",
-      "version": "205534",
-      "previousVersion": "205533",
-      "digest": "HiWWNu2mU6gnDt6VrShv6CRsLqZMFjJF9iNb5TkRJdS7"
+      "version": "205536",
+      "previousVersion": "205535",
+      "digest": "HtxXhDFeU9pd99DjCb1x7Hq4bVsrT5qFcH7jGXsBrmWW"
     },
     {
       "type": "created",
@@ -103,9 +105,9 @@
         "AddressOwner": "0x1378f860144a2ab2e34622009e4a11b9228d245e444b0caf6289096206cbd496"
       },
       "objectType": "0x5eb0e038eb9d4947505f06816a68f95f3e05f4cd97367653c71bba779dff7c8a::dummy_nft::DummyNFT",
-      "objectId": "0x4ae7748910ff1d0cd50dd259a04ff2d4977c0ff4f07f55de29199e9702d9f2ed",
-      "version": "205534",
-      "digest": "Hxzi9bZcG9e7yEWCKrSkeCap3cTLZaRL16ths3fCChnL"
+      "objectId": "0xf1ed8171fe3bb00496bbe30fc4c3e5b3fc46f267d3dabfab71f6fb6c7a592f78",
+      "version": "205536",
+      "digest": "EK1oGPDzrKD3cS15bTHfZCAmshAqkh44ruFYHxD3dfMK"
     }
   ],
   "confirmedLocalExecution": true

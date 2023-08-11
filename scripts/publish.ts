@@ -1,21 +1,10 @@
-import { testnetConnection, JsonRpcProvider, TransactionBlock, RawSigner } from "@mysten/sui.js";
-import { getKeyPair } from "./helpers";
+import { TransactionBlock } from "@mysten/sui.js";
+import { ADMIN_ADDRESS, CLI_PATH, PACKAGE_PATH, adminSigner    } from "./setup";
 
 const { execSync } = require('child_process');
-import * as dotenv from "dotenv";
-dotenv.config();
 
-const privKey: string = process.env.ADMIN_PRIVATE_KEY!;
-const packagePath: string = process.env.PACKAGE_PATH!;
-const cliPath: string = process.env.CLI_PATH!;
-
-let keyPair = getKeyPair(privKey);
-let mugenAddress = keyPair.getPublicKey().toSuiAddress();
-
-const provider = new JsonRpcProvider(testnetConnection);
-const signer = new RawSigner(keyPair, provider);
 const { modules, dependencies } = JSON.parse(
-	execSync(`${cliPath} move build --dump-bytecode-as-base64 --path ${packagePath}`, {
+	execSync(`${CLI_PATH} move build --dump-bytecode-as-base64 --path ${PACKAGE_PATH}`, {
 		encoding: 'utf-8',
 	}),
 );
@@ -26,8 +15,8 @@ async function publish() {
     modules,
     dependencies,
   });
-  tx.transferObjects([upgradeCap], tx.pure(mugenAddress));
-  const result = await signer.signAndExecuteTransactionBlock({
+  tx.transferObjects([upgradeCap], tx.pure(ADMIN_ADDRESS));
+  const result = await adminSigner.signAndExecuteTransactionBlock({
     transactionBlock: tx,
     requestType: "WaitForLocalExecution",
     options: {

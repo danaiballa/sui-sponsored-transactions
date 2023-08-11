@@ -1,39 +1,21 @@
-import { testnetConnection, JsonRpcProvider, TransactionBlock, RawSigner, SuiTransactionBlockResponse } from "@mysten/sui.js";
-import { getKeyPair } from "./helpers";
-
-const { execSync } = require('child_process');
-import * as dotenv from "dotenv";
-dotenv.config();
-
-const adminPrivKey = process.env.ADMIN_PRIVATE_KEY!;
-const userPrivKey = process.env.USER_PRIVATE_KEY!;
-
-const packageID = process.env.PACKAGE_ID!;
-const mintCapID = process.env.MINT_CAP_ID!;
-
-const adminKeyPair = getKeyPair(adminPrivKey);
-const userKeyPair = getKeyPair(userPrivKey);
-
-const userAddress = userKeyPair.getPublicKey().toSuiAddress();
-
-const provider = new JsonRpcProvider(testnetConnection);
-const admin = new RawSigner(adminKeyPair, provider);
+import { TransactionBlock, SuiTransactionBlockResponse } from "@mysten/sui.js";
+import {PACKAGE_ID, MINT_CAP_ID, USER_ADDRESS, adminSigner} from "./setup";
 
 async function mintAndTransfer(): Promise<SuiTransactionBlockResponse> {
 
   let txb = new TransactionBlock();
 
   let dummyNft = txb.moveCall({
-    target: `${packageID}::dummy_nft::mint`,
+    target: `${PACKAGE_ID}::dummy_nft::mint`,
     arguments: [
-        txb.object(mintCapID),
+        txb.object(MINT_CAP_ID),
         txb.pure(3)
     ]
   });
 
-  txb.transferObjects([dummyNft], txb.pure(userAddress));
+  txb.transferObjects([dummyNft], txb.pure(USER_ADDRESS));
 
-  let result = await admin.signAndExecuteTransactionBlock({
+  let result = await adminSigner.signAndExecuteTransactionBlock({
     transactionBlock: txb,
     requestType: "WaitForLocalExecution",
     options: {
