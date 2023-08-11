@@ -1,0 +1,112 @@
+{
+  "digest": "6u4bcU4Y5SZZ75K2hK8zGcUmiAXGY1w3oS1aXPEnpPMV",
+  "effects": {
+    "messageVersion": "v1",
+    "status": {
+      "status": "success"
+    },
+    "executedEpoch": "92",
+    "gasUsed": {
+      "computationCost": "1000000",
+      "storageCost": "3686000",
+      "storageRebate": "2279772",
+      "nonRefundableStorageFee": "23028"
+    },
+    "modifiedAtVersions": [
+      {
+        "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
+        "sequenceNumber": "205533"
+      },
+      {
+        "objectId": "0xb2cc6cfa293672df01aaff12e4c193a6614fb207907e8414e52138694cbf074e",
+        "sequenceNumber": "205533"
+      }
+    ],
+    "transactionDigest": "6u4bcU4Y5SZZ75K2hK8zGcUmiAXGY1w3oS1aXPEnpPMV",
+    "created": [
+      {
+        "owner": {
+          "AddressOwner": "0x1378f860144a2ab2e34622009e4a11b9228d245e444b0caf6289096206cbd496"
+        },
+        "reference": {
+          "objectId": "0x4ae7748910ff1d0cd50dd259a04ff2d4977c0ff4f07f55de29199e9702d9f2ed",
+          "version": 205534,
+          "digest": "Hxzi9bZcG9e7yEWCKrSkeCap3cTLZaRL16ths3fCChnL"
+        }
+      }
+    ],
+    "mutated": [
+      {
+        "owner": {
+          "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+        },
+        "reference": {
+          "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
+          "version": 205534,
+          "digest": "BpRs5mTwSZEs2m8HphXYNotQTqxfL9BbFAREHBNoEtQU"
+        }
+      },
+      {
+        "owner": {
+          "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+        },
+        "reference": {
+          "objectId": "0xb2cc6cfa293672df01aaff12e4c193a6614fb207907e8414e52138694cbf074e",
+          "version": 205534,
+          "digest": "HiWWNu2mU6gnDt6VrShv6CRsLqZMFjJF9iNb5TkRJdS7"
+        }
+      }
+    ],
+    "gasObject": {
+      "owner": {
+        "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+      },
+      "reference": {
+        "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
+        "version": 205534,
+        "digest": "BpRs5mTwSZEs2m8HphXYNotQTqxfL9BbFAREHBNoEtQU"
+      }
+    },
+    "dependencies": [
+      "AWNetjkom6dddaRLo48KDKnybDDyaLh1gVTY4gYmeZui"
+    ]
+  },
+  "objectChanges": [
+    {
+      "type": "mutated",
+      "sender": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413",
+      "owner": {
+        "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+      },
+      "objectType": "0x2::coin::Coin<0x2::sui::SUI>",
+      "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
+      "version": "205534",
+      "previousVersion": "205533",
+      "digest": "BpRs5mTwSZEs2m8HphXYNotQTqxfL9BbFAREHBNoEtQU"
+    },
+    {
+      "type": "mutated",
+      "sender": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413",
+      "owner": {
+        "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+      },
+      "objectType": "0x5eb0e038eb9d4947505f06816a68f95f3e05f4cd97367653c71bba779dff7c8a::dummy_nft::MintCap",
+      "objectId": "0xb2cc6cfa293672df01aaff12e4c193a6614fb207907e8414e52138694cbf074e",
+      "version": "205534",
+      "previousVersion": "205533",
+      "digest": "HiWWNu2mU6gnDt6VrShv6CRsLqZMFjJF9iNb5TkRJdS7"
+    },
+    {
+      "type": "created",
+      "sender": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413",
+      "owner": {
+        "AddressOwner": "0x1378f860144a2ab2e34622009e4a11b9228d245e444b0caf6289096206cbd496"
+      },
+      "objectType": "0x5eb0e038eb9d4947505f06816a68f95f3e05f4cd97367653c71bba779dff7c8a::dummy_nft::DummyNFT",
+      "objectId": "0x4ae7748910ff1d0cd50dd259a04ff2d4977c0ff4f07f55de29199e9702d9f2ed",
+      "version": "205534",
+      "digest": "Hxzi9bZcG9e7yEWCKrSkeCap3cTLZaRL16ths3fCChnL"
+    }
+  ],
+  "confirmedLocalExecution": true
+}

@@ -1,0 +1,126 @@
+{
+  "digest": "AWNetjkom6dddaRLo48KDKnybDDyaLh1gVTY4gYmeZui",
+  "effects": {
+    "messageVersion": "v1",
+    "status": {
+      "status": "success"
+    },
+    "executedEpoch": "92",
+    "gasUsed": {
+      "computationCost": "1000000",
+      "storageCost": "11681200",
+      "storageRebate": "978120",
+      "nonRefundableStorageFee": "9880"
+    },
+    "modifiedAtVersions": [
+      {
+        "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
+        "sequenceNumber": "205532"
+      }
+    ],
+    "transactionDigest": "AWNetjkom6dddaRLo48KDKnybDDyaLh1gVTY4gYmeZui",
+    "created": [
+      {
+        "owner": "Immutable",
+        "reference": {
+          "objectId": "0x5eb0e038eb9d4947505f06816a68f95f3e05f4cd97367653c71bba779dff7c8a",
+          "version": 1,
+          "digest": "9nNxbtHdby8qemJmverbQHuNN4wNEWgQeev8fXG6Se9A"
+        }
+      },
+      {
+        "owner": {
+          "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+        },
+        "reference": {
+          "objectId": "0x83ebcbed984a80de363ff3105e3cd89bd16a3a096b6c7bf39454a91fe9cfe83e",
+          "version": 205533,
+          "digest": "5nLNLZdJTGHB3wCd4hCVFR2xKuUFSuztGQSphyED65Zz"
+        }
+      },
+      {
+        "owner": {
+          "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+        },
+        "reference": {
+          "objectId": "0xb2cc6cfa293672df01aaff12e4c193a6614fb207907e8414e52138694cbf074e",
+          "version": 205533,
+          "digest": "2a1LtVZBSd2yVcFZW5JQESWDwy8haMVWBe6E1stfbVqe"
+        }
+      }
+    ],
+    "mutated": [
+      {
+        "owner": {
+          "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+        },
+        "reference": {
+          "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
+          "version": 205533,
+          "digest": "AJ7xeBJtG2Uhs7rSohXDoxGo4ZDcV82DqK6N33Sr4Hdg"
+        }
+      }
+    ],
+    "gasObject": {
+      "owner": {
+        "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+      },
+      "reference": {
+        "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
+        "version": 205533,
+        "digest": "AJ7xeBJtG2Uhs7rSohXDoxGo4ZDcV82DqK6N33Sr4Hdg"
+      }
+    },
+    "dependencies": [
+      "2caViqmPxyZeyxEbhDoswesCbRPfTHVuY9c8qG9LVUgg",
+      "3pcBpJcaTZJstk5Ssu13zXjSaNQX2Xw1U2F66C9dajq5",
+      "7rzgu4kg8zTji8XgUZUocYs1FuPw82mWhReMyXDUWF1Q"
+    ]
+  },
+  "objectChanges": [
+    {
+      "type": "mutated",
+      "sender": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413",
+      "owner": {
+        "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+      },
+      "objectType": "0x2::coin::Coin<0x2::sui::SUI>",
+      "objectId": "0x39bb03850b88e7ea6843605b0ab31a8cd222b1de3c23288983fd1f5b46acc6d8",
+      "version": "205533",
+      "previousVersion": "205532",
+      "digest": "AJ7xeBJtG2Uhs7rSohXDoxGo4ZDcV82DqK6N33Sr4Hdg"
+    },
+    {
+      "type": "published",
+      "packageId": "0x5eb0e038eb9d4947505f06816a68f95f3e05f4cd97367653c71bba779dff7c8a",
+      "version": "1",
+      "digest": "9nNxbtHdby8qemJmverbQHuNN4wNEWgQeev8fXG6Se9A",
+      "modules": [
+        "dummy_nft"
+      ]
+    },
+    {
+      "type": "created",
+      "sender": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413",
+      "owner": {
+        "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+      },
+      "objectType": "0x2::package::UpgradeCap",
+      "objectId": "0x83ebcbed984a80de363ff3105e3cd89bd16a3a096b6c7bf39454a91fe9cfe83e",
+      "version": "205533",
+      "digest": "5nLNLZdJTGHB3wCd4hCVFR2xKuUFSuztGQSphyED65Zz"
+    },
+    {
+      "type": "created",
+      "sender": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413",
+      "owner": {
+        "AddressOwner": "0x0ba6a2ea5e021ba771c882b65dccccd37131b2e68816de2d39f90a20864ab413"
+      },
+      "objectType": "0x5eb0e038eb9d4947505f06816a68f95f3e05f4cd97367653c71bba779dff7c8a::dummy_nft::MintCap",
+      "objectId": "0xb2cc6cfa293672df01aaff12e4c193a6614fb207907e8414e52138694cbf074e",
+      "version": "205533",
+      "digest": "2a1LtVZBSd2yVcFZW5JQESWDwy8haMVWBe6E1stfbVqe"
+    }
+  ],
+  "confirmedLocalExecution": true
+}
