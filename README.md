@@ -1,2 +1,2 @@
 # sui-sponsored-transactions
-Example of sponsored transactions on Sui using the TS-SDK
+Example of a sponsored transaction on Sui using the TS-SDK
